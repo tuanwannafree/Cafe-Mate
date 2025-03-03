@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: FFF5CE;
+}
+.container img {
+    max-width: 100%;
+    height: auto;
+}
