@@ -1,11 +1,22 @@
-body {
+body , html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: FFF5CE;
+    background-color: #FFF5CE;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
 .container img {
     max-width: 100%;
     height: auto;
