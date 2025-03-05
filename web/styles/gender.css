@@ -12,10 +12,64 @@ body {
     height: 100vh;
 }
 
+
+/* Gender */
+.gender-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.gender-option {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gender-option .gender-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Default (Unselected) */
+.male {
+    background-color: #fdbf44;
+    color: white;
+}
+
+.female {
+    background-color: #fde9b7;
+    color: black;
+}
+
+/* Headline */
+.text {
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.headline {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 /* Nút tiếp tục */
 .buttonContinue {
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -29,18 +83,4 @@ body {
     border: none;
     border-radius: 40px;
     cursor: pointer;
-}
-
-/* Headline */
-.text {
-    position: fixed;
-    top: 50px;
-    transform: translateX(-50%);
-    text-align: center;
-}
-
-.headline {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
 }
