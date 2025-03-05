@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gender</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="../styles/looking.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="text">
+                <p class="headline">Tôi đang tìm kiếm</p>
+            </div>
+            <div class="buttonGroup">
+                <button class="looking" onclick="selectOption(this)"> Nhóm học</button>
+                <button class="looking" onclick="selectOption(this)">Người học cùng lĩnh vực</button>
+                <button class="looking" onclick="selectOption(this)">Gặp gỡ và học hỏi</button>
+                <button class="looking" onclick="selectOption(this)">Other</button>
+            </div>
+            <div class="buttonContinue">
+                <button class="continue">Continue</button>
+            </div>
+        </div>
+        <script>
+            function selectOption(element) {
+                document.querySelectorAll(".looking").forEach(btn => btn.classList.remove("selected"));
+                element.classList.add("selected");
+            }
+        </script>
+    </body>
+</html>
