@@ -3,15 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cafemate - login</title>
+        <title>Cafemate - register</title>
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="../styles/loginPage.css">
+        <link rel="stylesheet" href="../styles/register.css">
     </head>
     <body>
         <div class="circle-bg">
             <img src="../images/login/coffee.png" alt="Backgound 1">
-        </div> 
-
+        </div>
         <div class="container">
             <div class="login-card">
                 <div class="logo">
@@ -19,12 +20,14 @@
                     <p>A way of enjoy bitter and sweet of life</p>
                 </div>
                 <div class="tabs">
-                    <button class="active">Login</button>
-                    <button>Sign Up</button>
+                    <button>Login</button>
+                    <button class="active">Sign Up</button>
                 </div>
                 <form>
+                    
                     <input type="text" id="email" placeholder="Username or email">
                     <input type="password" id="password" placeholder="Enter your password">
+                    <input type="password" id="password" placeholder="Confirm your password">
                     <a href="#" class="forgot">Forgot password</a>
                     <button type="submit" class="login-btn">Login</button>
                 </form>

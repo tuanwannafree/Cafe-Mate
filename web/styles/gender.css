@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Nút tiếp tục */
+.buttonContinue {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.continue {
+    font-size: 1.5em;
+    padding: 20px 0;
+    font-weight: bold;
+    width: 375px;
+    background-color: #FFD36D;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* Headline */
+.text {
+    position: fixed;
+    top: 50px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.headline {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
