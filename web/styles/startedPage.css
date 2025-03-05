@@ -33,22 +33,27 @@ body, html {
 .login-button {
     order: 1;
     font-size: 1.5em;
-    padding: 20px 115px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 375px;
     margin-right: 10px;
     background-color: #FFD36D;
     color: black;
-    border: 2px solid black;
-    border-radius: 25px;
+    border: none;
+    border-radius: 40px;
     cursor: pointer;
 }
 
 .register-button {
     order: 2;
     font-size: 1.5em;
-    padding: 20px 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 375px;
     background-color: #FFFFFF;
     color: black;
     border: 2px solid black;
-    border-radius: 25px;
+    border-radius: 40px;
     cursor: pointer;
 }
+

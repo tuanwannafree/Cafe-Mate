@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interest</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="../styles/interestPage.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="text">
+                <p class="headline">Chọn 3 lĩnh vực</p>
+                <p class="second">Hãy cho chúng tôi biết điều gì khơi dậy sự tò mò và đam mê của bạn</p>
+            </div>
+            <div id="buttonContainer"></div>
+            <div class="buttons">
+                <button class="continue">Continue</button>
+            </div>
+        </div>
+    </body>
+    <script>
+        const white = [
+        { name: "Toán", icon: "fas fa-square-root-alt" },
+            { name: "Hóa học", icon: "fas fa-flask" },
+            { name: "Kinh doanh", icon: "fas fa-briefcase" },
+            { name: "Marketing", icon: "fas fa-bullhorn" },
+            { name: "Logistics", icon: "fas fa-truck" },
+            { name: "Kỹ thuật", icon: "fas fa-cogs" },
+            { name: "Y học", icon: "fas fa-user-md" },
+            { name: "Trí tuệ nhân tạo", icon: "fas fa-robot" },
+            { name: "Game", icon: "fas fa-gamepad" },
+            { name: "An toàn thông tin", icon: "fas fa-shield-alt" },
+            { name: "UI/UX", icon: "fas fa-pencil-ruler" },
+            { name: "IoT", icon: "fas fa-microchip" },
+            { name: "Thiết kế", icon: "fas fa-palette" },
+            { name: "Edit Video", icon: "fas fa-video" },
+            { name: "Văn học", icon: "fas fa-book" },
+            { name: "Triết học", icon: "fas fa-lightbulb" },
+            { name: "Xã hội", icon: "fas fa-users" },
+            { name: "Luật", icon: "fas fa-gavel" },
+            { name: "Chính trị", icon: "fas fa-landmark" }
+        ];
+
+        const yel = [
+            { name: "Vật lý", icon: "fas fa-atom" },
+            { name: "Sinh học", icon: "fas fa-dna" },
+            { name: "Kinh tế", icon: "fas fa-chart-line" },
+            { name: "Tài chính", icon: "fas fa-coins" },
+            { name: "Kế toán", icon: "fas fa-calculator" },
+            { name: "Nhân lực", icon: "fas fa-users" },
+            { name: "Nông nghiệp", icon: "fas fa-seedling" },
+            { name: "Khoa học Trái đất", icon: "fas fa-globe" },
+            { name: "Lập trình", icon: "fas fa-code" },
+            { name: "Dữ liệu", icon: "fas fa-database" },
+            { name: "Web/Mobile", icon: "fas fa-laptop-code" },
+            { name: "Thiết kế đồ họa", icon: "fas fa-palette" },
+            { name: "Hội họa", icon: "fas fa-paint-brush" },
+            { name: "Kiến trúc", icon: "fas fa-drafting-compass" },
+            { name: "Nhiếp ảnh", icon: "fas fa-camera" },
+            { name: "Âm nhạc", icon: "fas fa-music" },
+            { name: "Ngôn ngữ học", icon: "fas fa-language" },
+            { name: "Tâm lý học", icon: "fas fa-brain" },
+            { name: "Thể thao", icon: "fas fa-running" }
+        ];
+
+        const length = Math.max(white.length, yel.length);
+        const container = document.getElementById("buttonContainer");
+
+        for (let i = 0; i < length; i++) {
+            if (white[i]) container.innerHTML += `<button class="white"><i class="${white[i].icon}"></i> ${white[i].name}</button>`;
+            if (yel[i]) container.innerHTML += `<button class="yellow"><i class="${yel[i].icon}"></i> ${yel[i].name}</button>`;
+        }
+    </script>
+</html>
