@@ -7,12 +7,31 @@
 }
 
 body {
-    background: url('coffee-bg.jpg') no-repeat center center/cover;
+    background: url('') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+
+/*Background*/
+.circle-bg {
+    position: absolute;
+    top: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle-bg img {
+    width: 100%;
+    height: 100%;
+}
+
+
 
 /* Centering the login card */
 .container {
@@ -31,6 +50,7 @@ body {
     background: #FFF7E6;
     border-radius: 20px;
     width: 400px;
+    z-index: 1;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -62,6 +82,8 @@ body {
     display: flex;
     width: 100%;
     margin-bottom: 25px;
+    border: 2px solid #FFD36D;
+    border-radius: 30px;
 }
 
 .tabs button {
@@ -82,7 +104,6 @@ body {
 .tabs button:not(.active) {
     background: transparent;
     color: #8B5E3C;
-    border: 2px solid #FFD36D;
 }
 
 /* Input Fields */
@@ -125,7 +146,8 @@ form input::placeholder {
     text-align: right;
     font-size: 14px;
     color: #8B5E3C;
-    margin-top: -10px;
+    margin-top: 5px;
+    
 }
 
 /* Buttons */
@@ -160,6 +182,13 @@ form input::placeholder {
 
 .google-btn:hover {
     background: #F5F5F5;
+}
+
+.google-logo {
+    width:20px;
+    height:20px;
+    margin-left: 12px;
+    vertical-align: middle;
 }
 
 /* Responsive Design */
