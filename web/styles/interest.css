@@ -75,18 +75,19 @@ body {
 /* Nút tiếp tục */
 .buttonContinue {
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .continue {
-    font-size: 1.5em;
-    padding: 20px 0;
-    font-weight: bold;
-    width: 375px;
+    font-size: clamp(16px, 1.5em - 0.5vw, 24px); 
+    padding: clamp(10px, 20px - 1vw, 20px) 0; 
+    width: clamp(200px, 375px - 10vw, 375px);
     background-color: #FFD36D;
     border: none;
     border-radius: 40px;
     cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
 }

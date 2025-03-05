@@ -17,20 +17,20 @@ body {
 .gender-selection {
     display: flex;
     flex-direction: column;
-    gap: clamp(0px, 20px - 3vw, 20px);
+    gap: clamp(0px, 20px - 3vw, 20px); /* Giảm khi viewport lớn */
     align-items: center;
-    margin-top: clamp(20px, 60px - 5vh, 60px); 
+    margin-top: clamp(20px, 60px - 5vh, 60px); /* Giảm khi viewport lớn */
 }
 
 .gender-option {
-    width: clamp(100px, 180px - 10vw, 180px); 
+    width: clamp(100px, 180px - 10vw, 180px); /* Giảm khi viewport lớn */
     height: clamp(100px, 180px - 10vw, 180px);
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: clamp(14px, 24px - 2vw, 24px);
+    font-size: clamp(14px, 24px - 2vw, 24px); /* Giảm font-size khi viewport lớn */
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
@@ -42,11 +42,7 @@ body {
     margin-bottom: 10px;
 }
 
-.gender-label {
-    font-size: clamp(5px, 20px - 1vw, 20px);
-    text-align: center;
-}
-
+/* Default (Unselected) */
 .male {
     background-color: #fdbf44;
     color: white;
@@ -82,13 +78,12 @@ body {
 }
 
 .continue {
-    font-size: clamp(16px, 1.5em - 0.5vw, 24px); 
-    padding: clamp(10px, 20px - 1vw, 20px) 0; 
-    width: clamp(200px, 375px - 10vw, 375px);
+    font-size: 1.5em;
+    padding: 20px 0;
+    font-weight: bold;
+    width: 375px;
     background-color: #FFD36D;
     border: none;
     border-radius: 40px;
     cursor: pointer;
-    transition: 0.3s;
-    font-weight: bold;
 }
