@@ -73,15 +73,11 @@ body {
 }
 
 /* Nút tiếp tục */
-.buttons {
+.buttonContinue {
     position: fixed;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background: none;
 }
 
 .continue {
