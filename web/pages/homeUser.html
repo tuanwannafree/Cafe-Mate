@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="../styles/homeUser.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="effect"></div>
+            <button class="active">
+                <i class="fa-solid fa-house"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-comments"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-user"></i>
+            </button>
+        </div>
+    </body>
+    <script>
+        const effect = document.querySelector('.effect');
+        const buttons = document.querySelectorAll('.navbar button:not(.plus)');
+
+        buttons.forEach(button => {
+
+            button.addEventListener('click', e => {
+
+                const x = e.target.offsetLeft;
+
+                buttons.forEach(btn => {
+                    btn.classList.remove('active');
+                })
+
+                e.target.classList.add('active');
+
+                anime({
+                    targets: '.effect',
+                    left: `${x}px`,
+                    opacity: '1',
+                    duration: 600
+                })
+
+            })
+
+        })
+    </script>
+</html>
